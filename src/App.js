@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Carousel from "./components/Carousel";
+import Shop from "./components/ShopCollection";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div style={{position:"fixed", width:"100%", zIndex:"2147483600"}}>
+        <p style={{background:"black", color:"white", textAlign:"center", marginTop:"0", fontSize:"80%", padding:"0.3%"}}>CONTACT US AT +91-8800554491 | SHIPPING WORLDWIDE</p>
+        <header style={{textAlign:"center", marginTop:"0", fontSize:"80%", padding:"0.3%", fontFamily:"SegoeUI", fontSize:"200%", color:"white"}}>JJ VALAYA</header>
+      </div>
+      <Carousel/>
+      <Shop/>
     </div>
   );
 }
