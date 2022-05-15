@@ -2,6 +2,7 @@ import './App.css';
 import Carousel from "./components/Carousel";
 import IKAJacket from "./components/IKAJacket";
 import Shop from "./components/ShopCollection";
+import Gallery from './components/Gallery';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Carousel/>
       <Shop/>
       <IKAJacket/>
+      <Gallery/>
     </div>
   );
 }
