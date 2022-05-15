@@ -1,5 +1,6 @@
 import './App.css';
 import Carousel from "./components/Carousel";
+import IKAJacket from "./components/IKAJacket";
 import Shop from "./components/ShopCollection";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       </div>
       <Carousel/>
       <Shop/>
+      <IKAJacket/>
     </div>
   );
 }
