@@ -1,4 +1,7 @@
 import { Component } from "react";
+import { Modal } from 'react-responsive-modal';
+import 'react-responsive-modal/styles.css';
+import '../loginModal.css';
 
 export default class Header extends Component{
     state = {
@@ -10,7 +13,8 @@ export default class Header extends Component{
         src4:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/user-light.svg",
         src5:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/search-light.svg",
         src6:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/cart-light.svg",
-        height:"auto"
+        height:"auto",
+        openModal : false
     }
     state1 = {background: '#f8f2e6', color:'black', height:"33%", src1:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/insta-dark.svg", src2:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/fb-dark.svg", src3:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/call-dark.svg", src4:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/user-dark.svg", src5:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/search-dark.svg", src6:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/cart-dark.svg"};
     listenScrollEvent = e => {
@@ -24,6 +28,16 @@ export default class Header extends Component{
     componentDidMount() {
       window.addEventListener('scroll', this.listenScrollEvent)
     }
+
+    onClickButton = e =>{
+      e.preventDefault()
+      this.setState({openModal : true})
+    }
+
+    onCloseModal = ()=>{
+      this.setState({openModal : false})
+    }
+
     render() {
       return(
         <div style={{position:"fixed", width:"100%", zIndex:"1000"}}>
@@ -50,7 +64,32 @@ export default class Header extends Component{
                     <div className="col-6 col-md-4 offset-1 offset-md-1" style={{textAlign:"center",fontFamily:"SegoeUI", fontSize:"220%"}}>IJ VALAYA</div>
                     <div className="col-4 col-md-3 offset-md-1">
                         <a href="http://www.whatsapp.com"><img className="d-none d-md-inline-block" src="https://valaya.com/assets/whatsapp-48.png" style={{height:"33%", marginRight:"8%"}}></img></a>
-                        <button style={{color:this.state.color, fontSize:"80%", background:"transparent", border:"none", marginRight:"8%"}}><img src={this.state.src4} style={{height:this.state.height}}></img><text className="d-none d-md-inline-block">LOGIN</text></button>
+                        <button onClick={this.onClickButton} style={{color:this.state.color, fontSize:"80%", background:"transparent", border:"none", marginRight:"8%"}}><img src={this.state.src4} style={{height:this.state.height}}></img><text className="d-none d-md-inline-block">LOGIN</text></button>
+                        <Modal center classNames={{modal: 'customModal'}} open={this.state.openModal} onClose={this.onCloseModal}>
+                            <header style={{paddingBottom:"5%", textAlign:"center"}}>LOG IN</header>
+                            <div className="container">
+                              <form style={{padding:"5%"}}>
+                                <div style={{paddingBottom:"7%"}}>
+                                <input type='email' placeholder="E-mail address *" style={{width:"100%"}}/>
+                                </div>
+                                <div style={{paddingBottom:"7%"}}>
+                                <input type='password' placeholder="Password *" style={{width:"100%"}}/>
+                                </div>
+                                <div className="row">
+                                  <div className="col-6">
+                                    <input type='checkbox' style={{marginRight:"5%"}}/>Remember me
+                                  </div>
+                                  <div className="col-5 offset-md-1" style={{paddingBottom:"7%"}}>
+                                    <button style={{border:'none', background:"transparent"}} id='forgot'>Forgot the password?</button>
+                                  </div>
+                                  <input type='submit' value='LOGIN TO YOUR ACCOUNT' id="login"/>
+                                  <div style={{paddingTop:"7%", textAlign:"center", fontSize: '90%'}}>
+                                    or <button id="register">register an account</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                        </Modal>
                         <button style={{background:"transparent", border:"none", marginRight:"8%"}}><img src={this.state.src5}/></button>
                         <button style={{background:"transparent", border:"none"}}><img src={this.state.src6}/></button>
                     </div>

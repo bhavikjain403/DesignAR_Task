@@ -3,6 +3,7 @@ import Carousel from "./Carousel";
 import IKAJacket from "./IKAJacket";
 import Shop from "./ShopCollection";
 import Gallery from './Gallery';
+import {Link} from 'react-router-dom';
 
 export default function HomePage(){
     return(
@@ -11,7 +12,7 @@ export default function HomePage(){
                 <img src="assets/images/chaticon.png" style={{maxHeight:"60px"}}></img>
             </div>
             <Header/>
-            <Carousel/>
+            <Link to="/shop"><Carousel/></Link>
             <Shop/>
             <IKAJacket/>
             <Gallery/>

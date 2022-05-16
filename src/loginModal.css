@@ -1,0 +1,30 @@
+.customModal {
+    max-width: 600px;
+    width: 80%;
+}
+
+#login {
+    border: 1px solid black;
+    background: transparent;
+    width: 100%;
+    font-size: 80%;
+    padding: 1%;
+}
+
+#login:hover {
+    background: black;
+    color: white;
+}
+
+#forgot:hover {
+    text-decoration: underline 1px;
+}
+
+#register {
+    border: none;
+    background: transparent;
+}
+
+#register:hover {
+    text-decoration: underline 1px;
+}

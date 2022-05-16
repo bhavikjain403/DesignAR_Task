@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom';
+
 export default function() {
     return (
         <div style={{background:"#f8f2e6", marginTop:"5%", paddingBottom:"5%"}}>
@@ -10,13 +12,13 @@ export default function() {
                 </div>
                 <div className="row">
                 <div className="col-12 col-md-4">
-                        <img src="assets/images/men.png" style={{width:"100%", height:"100%", paddingBottom:"5%"}}/>
+                        <Link to='/shop'><img src="assets/images/men.png" style={{width:"100%", height:"100%", paddingBottom:"5%"}}/></Link>
                     </div>
                     <div className="col-12 col-md-4">
-                        <img src="assets/images/women.png" style={{width:"100%", height:"100%", paddingBottom:"5%"}}/>
+                        <Link to='/shop'><img src="assets/images/women.png" style={{width:"100%", height:"100%", paddingBottom:"5%"}}/></Link>
                     </div>
                     <div className="col-12 col-md-4">
-                        <img src="assets/images/accessories.png" style={{width:"100%", weight:"100%", paddingBottom:"5%"}}/>
+                        <Link to='/shop'><img src="assets/images/accessories.png" style={{width:"100%", weight:"100%", paddingBottom:"5%"}}/></Link>
                     </div>
                 </div>
             </div>

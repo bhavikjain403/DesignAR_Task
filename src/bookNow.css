@@ -1,0 +1,8 @@
+#submitButton{
+    border: none;
+    background: black;
+    color: white;
+    padding: 2% 20% 2% 20%;
+    font-size: 75%;
+    margin-left: 25%;
+}
