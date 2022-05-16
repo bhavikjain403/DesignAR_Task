@@ -1,0 +1,10 @@
+#allbutton{
+    border: 0;
+    background: transparent;
+    margin-right: 5%;
+}
+
+#allbutton:hover{
+    text-decoration-line: underline;
+    font-weight: 500;
+}

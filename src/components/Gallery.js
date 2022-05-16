@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Shoots from "./Shoots";
 import Press from "./Press";
 import Runway from "./Runway";
 import Celebrities from "./Celebrities";
 import Collaborations from "./Collaborations";
 import HomeLifestyle from "./HomeLifestyle";
+import "../gallery.css"
 
 export default function Gallery() {
     const [buttons, setButtons] = useState([
@@ -50,7 +51,7 @@ export default function Gallery() {
     return (
       <div style={{textAlign:"center", paddingBottom:"2%"}}>
         {buttons.map((button, index) => (
-          <button style={{border:"0", marginRight:"4%", fontSize:"90%"}}
+          <button id="allbutton"
             key={`${button.label}-${index}`}
             onClick={() =>
               handleButtonsChange({ buttons, setButtons })(button.label)

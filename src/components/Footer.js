@@ -17,7 +17,7 @@ export default function() {
             <hr/>
             <div className='row' style={{textAlign:"center", fontSize:"90%"}}>
                 <div className='col-12 col-md-3'>
-                <Link to='/' style={{textDecoration: 'none', color:"black"}}>PRIVACY POLICY</Link>
+                <Link to='/privacy-policy' style={{textDecoration: 'none', color:"black"}}>PRIVACY POLICY</Link>
                 </div>
                 <div className='col-12 col-md-3'>
                 <Link to='/' style={{textDecoration: 'none', color:"black"}}>TERMS OF USE</Link>
@@ -30,7 +30,7 @@ export default function() {
                 </div>
             </div>
             <hr/>
-            <div className='row' style={{marginTop:"5%", paddingBottom:"5%"}}><p style={{textAlign:"center", fontSize:"80%"}}>&#169; (For Project Purpose Only)</p></div>
+            <div className='row' style={{marginTop:"5%", paddingBottom:"2%"}}><p style={{textAlign:"center", fontSize:"80%"}}>&#169; (For Project Purpose Only)</p></div>
         </div>
     );
 }
