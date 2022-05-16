@@ -20,7 +20,7 @@ export default function() {
                 <Link to='/privacy-policy' style={{textDecoration: 'none', color:"black"}}>PRIVACY POLICY</Link>
                 </div>
                 <div className='col-12 col-md-3'>
-                <Link to='/' style={{textDecoration: 'none', color:"black"}}>TERMS OF USE</Link>
+                <Link to='/terms-of-use' style={{textDecoration: 'none', color:"black"}}>TERMS OF USE</Link>
                 </div>
                 <div className='col-12 col-md-3'>
                 <Link to='/' style={{textDecoration: 'none', color:"black"}}>REPLACEMENT POLICY</Link>
