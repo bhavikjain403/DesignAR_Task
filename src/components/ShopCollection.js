@@ -1,6 +1,6 @@
 export default function() {
     return (
-        <div style={{background:"#eaece5", marginTop:"5%", paddingBottom:"5%"}}>
+        <div style={{background:"#f8f2e6", marginTop:"5%", paddingBottom:"5%"}}>
             <div className="container">
                 <div className="row">
                     <header style={{textAlign:"center", paddingTop:"7%"}}><h1>SHOP THE COLLECTION</h1></header>

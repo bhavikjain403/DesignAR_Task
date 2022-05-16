@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export default function() {
     return (
-        <div style={{background:"#eaece5", marginTop:"5%", padding:"5%"}}>
+        <div style={{background:"#f8f2e6", marginTop:"5%", padding:"5%"}}>
             <div className='row' style={{marginBottom:"5%"}}>
                 <div className='col-8 offset-2'>
                 <Card> 
@@ -23,7 +23,7 @@ export default function() {
                 <Link to='/terms-of-use' style={{textDecoration: 'none', color:"black"}}>TERMS OF USE</Link>
                 </div>
                 <div className='col-12 col-md-3'>
-                <Link to='/' style={{textDecoration: 'none', color:"black"}}>REPLACEMENT POLICY</Link>
+                <Link to='replacement-policy' style={{textDecoration: 'none', color:"black"}}>REPLACEMENT POLICY</Link>
                 </div>
                 <div className='col-12 col-md-3'>
                 <Link to='/' style={{textDecoration: 'none', color:"black"}}>CONTACT US</Link>

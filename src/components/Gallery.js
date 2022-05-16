@@ -34,7 +34,7 @@ export default function Gallery() {
     };
   
     return (
-        <div style={{background:"#eaece5"}}>
+        <div style={{background:"#f8f2e6"}}>
             <header style={{textAlign:"center", fontSize:"250%", paddingTop:"5%", paddingBottom:"3%"}}>GALLERY</header>
             <Specialbuton {...{ buttons, setButtons, handleButtonsChange }} />
             {buttons[0].value && <div><Shoots/></div>}

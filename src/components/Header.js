@@ -12,7 +12,7 @@ export default class Header extends Component{
         src6:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/cart-light.svg",
         height:"auto"
     }
-    state1 = {background: '#eaece5', color:'black', height:"33%", src1:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/insta-dark.svg", src2:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/fb-dark.svg", src3:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/call-dark.svg", src4:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/user-dark.svg", src5:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/search-dark.svg", src6:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/cart-dark.svg"};
+    state1 = {background: '#f8f2e6', color:'black', height:"33%", src1:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/insta-dark.svg", src2:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/fb-dark.svg", src3:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/call-dark.svg", src4:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/user-dark.svg", src5:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/search-dark.svg", src6:"https://ik.imagekit.io/thestylist/Assets/JV/Icons/cart-dark.svg"};
     listenScrollEvent = e => {
       if (window.scrollY > 100) {
         this.setState(this.state1)
