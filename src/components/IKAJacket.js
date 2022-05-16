@@ -4,11 +4,16 @@ import {Link} from 'react-router-dom';
 export default function() {
     return (
         <div>
+          <div className='d-none d-md-block'>
           <a href='http://www.whatsapp.com'><img style={{marginTop:"5%"}}
-            className="d-block w-100"
             src="https://ik.imagekit.io/thestylist/valaya/pub/media_valaya/HOMEPAGE_IMAGES/22_Apr_22/JJvalaya-Static-Banner.gif"
             alt="First slide"
-          /></a>
+          /></a></div>
+          <div className='d-md-none'>
+          <a href='http://www.whatsapp.com'><img style={{marginTop:"5%", maxWidth:"100%"}}
+            src="https://ik.imagekit.io/thestylist/valaya/pub/media_valaya/HOMEPAGE_IMAGES/22_Apr_22/JJvalaya-mob-BG.gif"
+            alt="First slide"
+          /></a></div>
           <div style={{marginTop:"5%", padding:"5%", paddingTop:"0"}}>
             <div className='row'>
               <div className='col-12 col-md-6'>
@@ -28,10 +33,17 @@ export default function() {
               </div>
             </div>
           </div>
-          <div className='row'>
+          <div className='d-none d-md-block'>
             <div style={{backgroundImage:"url(assets/images/whatsNew.png)", backgroundSize:"100%", textAlign:"center"}}>
               <div style={{paddingBottom:"5%"}}>
               <Link to='/shop'><button style={{background:"black", color:"white", margin:"auto", fontSize:"80%", width:"17%", padding:"0.5%", marginTop:"32%"}}>SHOP NOW</button></Link>
+              </div>
+            </div>
+          </div>
+          <div className='d-md-none'>
+            <div style={{backgroundImage:"url(assets/images/whatsNewMobile.png)", backgroundSize:"100%", textAlign:"center"}}>
+              <div style={{paddingBottom:"25%"}}>
+              <Link to='/shop'><button style={{background:"black", color:"white", margin:"auto", fontSize:"80%", width:"30%", padding:"0.5%", marginTop:"100%"}}>SHOP NOW</button></Link>
               </div>
             </div>
           </div>
