@@ -16,16 +16,16 @@ export default function() {
             </div>
             <hr/>
             <div className='row' style={{textAlign:"center", fontSize:"90%"}}>
-                <div className='col-12 col-md-3'>
+                <div onClick={() => window.scrollTo(0,0)} className='col-12 col-md-3'>
                 <Link to='/privacy-policy' style={{textDecoration: 'none', color:"black"}}>PRIVACY POLICY</Link>
                 </div>
-                <div className='col-12 col-md-3'>
+                <div onClick={() => window.scrollTo(0,0)} className='col-12 col-md-3'>
                 <Link to='/terms-of-use' style={{textDecoration: 'none', color:"black"}}>TERMS OF USE</Link>
                 </div>
-                <div className='col-12 col-md-3'>
+                <div onClick={() => window.scrollTo(0,0)} className='col-12 col-md-3'>
                 <Link to='replacement-policy' style={{textDecoration: 'none', color:"black"}}>REPLACEMENT POLICY</Link>
                 </div>
-                <div className='col-12 col-md-3'>
+                <div onClick={() => window.scrollTo(0,0)} className='col-12 col-md-3'>
                 <Link to='/' style={{textDecoration: 'none', color:"black"}}>CONTACT US</Link>
                 </div>
             </div>
