@@ -5,7 +5,7 @@ export default class HeaderStatic extends Component{
       return(
         <div style={{position:"fixed", width:"100%", zIndex:"1000"}}>
             <header>
-                <div style={{background:"black", color:"white", textAlign:"center", fontSize:"80%"}}>CONTACT US AT +91-88000554491 | SHIPPING WORLDWIDE</div>
+                <div style={{background:"black", color:"white", textAlign:"center", fontSize:"80%"}}>CONTACT US AT +91-8800554491 | SHIPPING WORLDWIDE</div>
                 <div className="row" style={{color:"black", background:'#f8f2e6', paddingTop:"1%"}}>
                     <div className="col-md-2 offset-md-1 d-none d-md-block">
                         <a href="http://www.instagram.com"><img src="https://ik.imagekit.io/thestylist/Assets/JV/Icons/insta-dark.svg" style={{height:"33%", marginRight:"8%"}}></img></a>
@@ -15,7 +15,7 @@ export default class HeaderStatic extends Component{
                     <div className="col-1 d-inline-block d-md-none">
                       <a href="http://www.whatsapp.com"><img src="https://valaya.com/assets/whatsapp-48.png" style={{height:"33%"}}></img></a>
                     </div>
-                    <div className="col-6 col-md-4 offset-1 offset-md-1" style={{textAlign:"center",fontFamily:"SegoeUI", fontSize:"220%"}}>IJ VALAYA</div>
+                    <div className="col-6 col-md-4 offset-1 offset-md-1" style={{textAlign:"center",fontFamily:"SegoeUI", fontSize:"220%"}}>JJ VALAYA</div>
                     <div className="col-4 col-md-3 offset-md-1">
                         <a href="http://www.whatsapp.com"><img className="d-none d-md-inline-block" src="https://valaya.com/assets/whatsapp-48.png" style={{height:"33%", marginRight:"8%"}}></img></a>
                         <button style={{color:"black", fontSize:"80%", background:"transparent", border:"none", marginRight:"8%"}}><img src="https://ik.imagekit.io/thestylist/Assets/JV/Icons/user-dark.svg" style={{height:"33%"}}></img><text className="d-none d-md-inline-block">LOGIN</text></button>
